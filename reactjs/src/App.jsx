@@ -1,14 +1,16 @@
-// import Cybrom from "./Cybrom";
+import Cybrom from "./Cybrom";
 
-// const App=()=>{
-// return(
-//     <div>
-//     <h1>Cybrom Pvt Ldt</h1>
-//     <Cybrom/>
-//     </div>
-// )
-// }
-// export default App;
+const App=()=>{
+return(
+    <div>
+    <h1>Cybrom Pvt Ldt</h1>
+    <Cybrom/>
+    </div>
+)
+}
+export default App;
+
+// classs com  fun comp
 
 // const name="Ankita";
 // const age=30;
@@ -23,26 +25,26 @@
 //     }
 //     export default App;
 
-const Sub=(<ol>
-    <li>Php</li>
-    <li>java</li>
-    <li>python</li>
-    <li>css</li>
-    <li>html</li>
-</ol>)
-
-const App=()=>{   
-    return(
-        <div>
-        <h1>Sub:{Sub}</h1>
-        </div>
-    )
-    }
-    export default App;
+// const Sub=(<ol>
+//     <li>Php</li>
+//     <li>java</li>
+//     <li>python</li>
+//     <li>css</li>
+//     <li>html</li>
+// </ol>)
 
 // const App=()=>{   
 //     return(
-//         <>
+//         <div>
+//         <h1>Sub:{Sub}</h1>
+//         </div>
+//     )
+//     }
+//     export default App;
+
+// const App=()=>{   
+//     return(
+//         <>// extra node nhi banega
 //         <h1>Sub</h1>
 //         </>
 //     )
@@ -62,6 +64,7 @@ const App=()=>{
 //     )
 //     }
 //     export default App;
+
 
 
 
