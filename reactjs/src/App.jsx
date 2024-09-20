@@ -1,11 +1,40 @@
-import Cybrom from "./Cybrom";
+// import Bhopal from "./Bhopal";
+// import Code from "./Code";
+// import Cybrom from "./Cybrom";
 
+import Students from "./Students";
+import College from "./College";
+import Developers from "./Developer";
+
+
+
+
+const student={
+    "rollno":111,
+    "name":"Kamlesh",
+    "city":"indore",
+    "fees":1000
+}
 const App=()=>{
 return(
-    <div>
-    <h1>Cybrom Pvt Ldt</h1>
-    <Cybrom/>
-    </div>
+    <>
+    {/* <h1>Cybrom Pvt Ldt</h1> */}
+    {/* <Cybrom/> */}
+    {/* <Bhopal/> */}
+    {/* <Code/> */}
+    <h1>Welcom!!!</h1>
+
+
+    {/* <College nm="TIT" Seats="230" ct="bhopal"/> */}
+    <Developers 
+    sturno={student.rollno}
+    stunm={student.name}
+    stuct={student.city}
+    stufs={student.fees}
+    />
+
+
+    </>
 )
 }
 export default App;
