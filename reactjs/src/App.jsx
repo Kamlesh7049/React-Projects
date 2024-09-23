@@ -1,27 +1,18 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import a from "./images/img1.jpg";
+import b from "./images/img2.jpg";
+import c from "./images/img3.jpg";
 
 
-const App=()=>{   
+const App=()=>{  
     return(
         <>
 
-        
-        {/* <h1 style={{color:"green",fontFamily:"verdana", textAlign:"center",}}>Welcom to Cybrom</h1> */}
-        <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">Cybrom Technology </Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Service</Nav.Link>
-            <Nav.Link href="#pricing">About</Nav.Link>
-            <Nav.Link href="#pricing">Contact</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+        <h1>Welcom</h1>
+        <img src={a} width="100px" height="50px"/>
+        <img src={b} width="100px" height="50px"/>
+        <img src={c} width="100px" height="50px"/>
         
        </>
     )
     }
-    export default App;
+    export default App
