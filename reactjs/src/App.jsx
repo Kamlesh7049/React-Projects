@@ -1,18 +1,41 @@
-import a from "./images/img1.jpg";
-import b from "./images/img2.jpg";
-import c from "./images/img3.jpg";
+import Carousel from 'react-bootstrap/Carousel';
+import img1 from "./images/b1.jpg";
+import img2 from "./images/b2.jpg";
+import img3 from "./images/b3.jpg";
+
 
 
 const App=()=>{  
     return(
         <>
 
-        <h1>Welcom</h1>
-        <img src={a} width="100px" height="50px"/>
-        <img src={b} width="100px" height="50px"/>
-        <img src={c} width="100px" height="50px"/>
+       <Carousel>
+      <Carousel.Item>
+        <img src={img1}/>
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src={img2} height="100%"/>
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src={img3} height="100%"/>
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
         
        </>
     )
     }
-    export default App
+    export default App;
