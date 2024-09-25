@@ -7,17 +7,22 @@ const App=()=>{
     return(
         <>
 
-<Container fluid>
+<Container >
       <Row>
-        <Col className='bg-primary'>1 of 1</Col>
-        <Col className='bg-secondary'>1 of 1</Col>
-        <Col className='bg-danger'>1 of 1</Col>
-        <Col className='bg-warning'>1 of 1</Col>
-      </Row>
-      <Row>
-      <Col className='bg-success'>Hello Enginneers</Col>
-      <Col className='bg-dark'>Hello Enginneers</Col>
-      </Row>
+        <Col md={1} className='bg-primary'><h6>Welcome to Cybrom</h6></Col>
+        <Col md={2} className='bg-success'><h6>Welcome to Cybrom</h6></Col>
+        <Col md={3} className='bg-danger'><h6>Welcome to Cybrom</h6></Col>
+        <Col md={6} className='bg-warning'><h6>Welcome to Cybrom</h6></Col>
+       </Row>
+
+       <Row>
+        <Col md={2} className='bg-primary'><h6>Welcome to Cybrom</h6></Col>
+        <Col md={2} className='bg-success'><h6>Welcome to Cybrom</h6></Col>
+        <Col md={4} className='bg-danger'><h6>Welcome to Cybrom</h6></Col>
+        <Col md={2} className='bg-warning'><h6>Welcome to Cybrom</h6></Col>
+        <Col md={2} className='bg-warning'><h6>Welcome to Cybrom</h6></Col>
+
+       </Row>
     </Container>
         
        </>
