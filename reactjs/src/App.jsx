@@ -1,13 +1,24 @@
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 const App=()=>{  
     return(
         <>
 
-        <h1 >Welcom to ReactJs</h1>
-        <img src="public/image/b1.jpg" size="4" color="red"  width="200px" height="100px"/> 
-        <img src="public/image/b2.jpg" width="200px" height="100px"/>
-        <img src="public/image/b3.jpg" width="200px" height="100px"/>
+<Container fluid>
+      <Row>
+        <Col className='bg-primary'>1 of 1</Col>
+        <Col className='bg-secondary'>1 of 1</Col>
+        <Col className='bg-danger'>1 of 1</Col>
+        <Col className='bg-warning'>1 of 1</Col>
+      </Row>
+      <Row>
+      <Col className='bg-success'>Hello Enginneers</Col>
+      <Col className='bg-dark'>Hello Enginneers</Col>
+      </Row>
+    </Container>
         
        </>
     )
