@@ -5,4 +5,3 @@ import  "./components/css/raj.css";
 import "./Portfolio/css/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 createRoot(document.getElementById("root")).render(<App />);
-           
