@@ -1,18 +1,30 @@
-const App = () => {
-  const subject = ["php", "oracle", "java", "asp", "html", "python","Reactjs"];
-  // const ans = subject.map((key) => <li>{key}</li>);
-  const data=subject.map(function(data){
-    return(
-      <>
-      <ul>{data}</ul>
-      </>
-    )
-  })
-  return (
+const student=[
+     {
+      "rollno":120,
+      "name":"sachin",
+      "city":"Bhoapl"
+
+     },
+     {
+      "rollno":121,
+      "name":"Kamlesh",
+      "city":"Singrauli"
+
+     },
+     {
+      "rollno":122,
+      "name":"sani",
+      "city":"Bhoapl"
+
+     }
+]
+console.log(student[2].name)
+const App=()=>{
+  return(
     <>
-      <h1>Hello World</h1>
-      <ul>{data}</ul>
+    <h1>Hello Engineers</h1>
+    
     </>
-  );
-};
+  )
+}
 export default App;
