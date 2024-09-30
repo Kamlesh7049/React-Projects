@@ -1,31 +1,18 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import NoPage from "./pages/NoPage";
-import AboutCompany from "./pages/AboutCompany";
-import AboutProduct from "./pages/AboutProduct";
-
-const App = () => {
+const APP = () => {
+  const subject = ["php", "oracle", "java", "asp", "html", "pyton"];
+  const ans = subject.map((key) => {
+    return (
+      <>
+        <li>{key}</li>
+      </>
+    );
+  });
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="home" element={<Home />} />
-            <Route path="about" element={<About />}>
-              <Route path="aboutcompany" element={<AboutCompany />} />
-              <Route path="aboutproduct" element={<AboutProduct />} />
-            </Route>
-            <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<NoPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <h1>Hello world</h1>
+      <ol>{ans}</ol>
     </>
   );
 };
 
-export default App;
+export default APP;
