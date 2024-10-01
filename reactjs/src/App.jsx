@@ -1,28 +1,39 @@
-const student=[
-     {
-      "rollno":120,
-      "name":"sachin",
-      "city":"Bhoapl"
 
-     },
-     {
-      "rollno":121,
-      "name":"Kamlesh",
-      "city":"Singrauli"
+import Design from "./Map/Design"
+const Student=[
 
-     },
-     {
-      "rollno":122,
-      "name":"sani",
-      "city":"Bhoapl"
+{
+  "rollno":121,
+  "name":"Ankita",
+  "city":"Bhopal"
+},
 
-     }
+{
+  "rollno":122,
+  "name":"Nikit",
+  "city":"Bhopal"
+},
+{
+  "rollno":123,
+  "name":"Kamlesh",
+  "city":"Bhopal"
+}
+
 ]
-console.log(student[2].name)
+const ans=Student.map((key)=><Design  rno={key.rollno}nm={key.name} ct={key.city}/>)
 const App=()=>{
   return(
     <>
-    <h1>Hello Engineers</h1>
+    <h1>Welcome Engineer !!!</h1>
+    <table border="1px" cellPadding="20" cellSpacing="30px">
+      <tr>
+        <th >Rollno</th>
+        <th >Name</th>
+        <th >City</th>
+      </tr>
+   {ans}
+    </table>
+    
     
     </>
   )
