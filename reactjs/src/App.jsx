@@ -1,41 +1,29 @@
+import EmpData from "./Map/EmpData";
+import EmpDesign from "./Map/EmpDesign";
 
-import Design from "./Map/Design"
-const Student=[
 
-{
-  "rollno":121,
-  "name":"Ankita",
-  "city":"Bhopal"
-},
 
-{
-  "rollno":122,
-  "name":"Nikit",
-  "city":"Bhopal"
-},
-{
-  "rollno":123,
-  "name":"Kamlesh",
-  "city":"Bhopal"
-}
 
-]
-const ans=Student.map((key)=><Design  rno={key.rollno}nm={key.name} ct={key.city}/>)
+
 const App=()=>{
+  const ans=EmpData.map((key)=><EmpDesign empno={key.empno} empnm={key.name} dpt={key.dept} sal={key.salary}/>)
+
   return(
-    <>
-    <h1>Welcome Engineer !!!</h1>
-    <table border="1px" cellPadding="20" cellSpacing="30px">
-      <tr>
-        <th >Rollno</th>
-        <th >Name</th>
-        <th >City</th>
-      </tr>
-   {ans}
-    </table>
-    
-    
-    </>
+
+  <>
+  <h1>Welcom Developers!!!</h1>
+  <table border="1px">
+   <tr>
+    <th>Emp Number</th>
+    <th>Emp Name</th>
+    <th>Emp dept</th>
+    <th>Emp Salary</th>
+   </tr>
+{ans}
+
+  </table>
+  </>
   )
+
 }
 export default App;
