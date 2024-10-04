@@ -1,3 +1,21 @@
+// App.jsx
+// ------------------
+// import Homework from "./Homework";
+
+// const App=()=>{
+//     return(
+//         <>
+
+//         {/* <h1>Welcom to Cybrom</h1> */}
+//         <Homework/>
+
+//         </>
+//        )
+// }
+
+// export default App;
+// ---------------------------------  
+
 // // const Homework=()=>{
 // const box1 = {
 //   width: "350px",
@@ -32,18 +50,16 @@
 // };
 
 // const Homework = () => {
-  // return (
+//   return (
 //     <>
-// //       <div style={box1}>
-// //         <div style={box2}>
-// //           <div style={box3}>
-// //             <p>Cybrom</p>
-// //           </div>
-// //         </div>
-// //       </div>
-// //     </>
-
-        
-  // );
+//       <div style={box1}>
+//         <div style={box2}>
+//           <div style={box3}>
+//             <p>Cybrom</p>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
 // };
 // export default Homework;

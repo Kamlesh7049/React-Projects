@@ -1,17 +1,18 @@
-
-import { useState } from "react";
+import {useState, useEffect} from "react"
 const App=()=>{
-  const [color,setColor]=useState("Red");
-  
+  const [cnt,setCnt]=useState(0);
+  const [multi,setMulti]=useState(0)
+  useEffect(()=>{
+    setMulti(cnt*2)
+  } ,[cnt])
   return(
-    <>
-    
-    <h1 style={{color:color}}>My favourite color:{color}</h1>
-    <button onClick={()=>{setColor("green")}}>Green</button>
-    <button onClick={()=>{setColor("orange")}}>orange</button>
-    <button onClick={()=>{setColor("aqua")}}>aqua</button>
-    <button onClick={()=>{setColor("blue")}}>blue</button>
-    </> 
+
+  <>
+  <h1>My Count:{cnt}</h1>
+  <h1>Multiplication:{multi}</h1>
+  <button onClick={()=>{setCnt(cnt+1)}}>click here</button>
+  
+  </>
   )
 }
 export default App;
