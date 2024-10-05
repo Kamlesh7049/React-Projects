@@ -29,26 +29,21 @@
 // -------------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// import { useState } from "react";
+// const App=()=>{
+//   const [city,setCity]=useState("")
+//   const display=()=>{
+//     setCity("Indore!");
+//   }
+//   return (
+//     <>
+//     <h1>My City:{city}</h1>
+//     <button onClick={()=>{setCity("Bhopal")}}>Click1</button>
+//     <button onClick={display}>Click2</button>
+//     </>
+//   )
+// }
+// export default App;
 
 // ---------------------------------------------------------------------------------------
 // import { useState } from "react";
@@ -72,3 +67,49 @@
 
 
 
+// import { useState } from "react";
+// const App=()=>{
+// const [cnt,setCnt]=useState(0);
+// const myDecrement=()=>{
+// if(cnt<=1){
+//   alert("No decrese - value")
+// }
+// else{
+//   setCnt(cnt-1)
+// }
+// }
+//   return(
+//     <>
+//     <center>
+//       <h1>Counter App</h1>
+//       <h1>Count:{cnt}</h1>
+//       <button onClick={()=>{setCnt(cnt+1)}}>+</button>	&nbsp;
+//       <button onClick={myDecrement}>-</button>  	&nbsp;
+//       <button onClick={()=>{setCnt(0)}}>Reset</button>
+//     </center>
+//     </>
+//   )
+// }
+// export default App;
+// --------------------------------------------------------------------------------------------------------------
+
+// import { useState } from "react";
+
+// const App =()=>{
+//   const [name,setName]=useState("");
+//   const [city,setCity]=useState("")
+//   return(
+//     <>
+//     <h1>Application Form</h1>
+//     Enter name:<input type="text" value={name} onChange={(e)=>{setName(e.target.value)}}/>
+//     Enter city:<input type="text" value={city} onChange={(e)=>{setCity(e.target.value)}}/>
+//     <button>Submit</button>
+//     </>
+
+//   )
+
+// }
+// export default App;
+
+
+// -------------------------------------------------------------------------------

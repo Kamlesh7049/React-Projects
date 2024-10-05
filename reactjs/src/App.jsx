@@ -1,18 +1,17 @@
-import {useState, useEffect} from "react"
-const App=()=>{
-  const [cnt,setCnt]=useState(0);
-  const [multi,setMulti]=useState(0)
-  useEffect(()=>{
-    setMulti(cnt*2)
-  } ,[cnt])
-  return(
+import { useState } from "react";
 
-  <>
-  <h1>My Count:{cnt}</h1>
-  <h1>Multiplication:{multi}</h1>
-  <button onClick={()=>{setCnt(cnt+1)}}>click here</button>
-  
-  </>
+const App =()=>{
+  const [name,setName]=useState("");
+  const [city,setCity]=useState("")
+  return(
+    <>
+    <h1>Application Form</h1>
+    Enter name:<input type="text" value={name} onChange={(e)=>{setName(e.target.value)}}/>
+    Enter city:<input type="text" value={city} onChange={(e)=>{setCity(e.target.value)}}/>
+    <button>Submit</button>
+    </>
+
   )
+
 }
 export default App;
