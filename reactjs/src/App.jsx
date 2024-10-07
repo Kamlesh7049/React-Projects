@@ -1,32 +1,48 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import axios from "axios";
 const App=()=>{
-  const [input, setInput]=useState({});//input{ }
-  //input={name:"kamlesh",city:"Bhopal",contact:456789,email:"admin@gmail.com"}
-  const handleInput=(e)=>{
-    let name=e.target.name;
-    let value=e.target.value;
-    //console.log({[name]:value})
-    //setInput({[name]:value})
-    
-    setInput((values)=>({...values,[name]:value}));
-    console.log(input);
+  const [mydata,setMydata]=useState([]);
+  const loadData=async()=>{
+    let api ="http://localhost:3000/students"; 
+
+    try {
+        const response=await axios.get(api);
+        setMydata(response.data);
+        console.log(response);
+    }
+    catch(error){
+      console.log("Server not Found !!!");
+    }
   }
-  const handleSubmit=()=>{
-    console.log(input);
-  }
+  useEffect(()=>{
+    loadData();
+  },[]);
+   
+  const ans=mydata.map((key)=>{
+    return(
+      <>
+      <tr>
+        <td>{key.rollno}</td>
+        <td>{key.name}</td>
+        <td>{key.city}</td>
+        <td>{key.fees}</td>
+      </tr>
+      </>
+    )
+  })
   return(
     <>
-    <center>
-      <h1>Application Form</h1>
-      Enter name :<input type="text" name="stunm" value={input.stunm} onChange={handleInput}/><br />
-      Enter city :<input type="text" name="city"  value={input.city} onChange={handleInput}/><br />
-      Enter contact :<input type="text" name="conatct" value={input.contact} onChange={handleInput}/><br />
-      Enter email : <input type="text" name="email" value={input.email} onChange={handleInput}/><br />
-      <button onClick={handleSubmit}>Data Save !!!</button>
-    </center>
+    <h1>Welcom Students</h1>
+    <table border="2px">
+      <tr>
+        <th>Rollno</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Fees</th>
+      </tr>
+      {ans}
+    </table>
     </>
   )
-
-
 }
 export default App;
