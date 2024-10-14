@@ -48,6 +48,13 @@
       "name": "Nitin",
       "email": "nitin@gmail.com",
       "contact": "1234567890"
+    },
+    {
+      "id": "3c60",
+      "empno": "001",
+      "name": "Aditya",
+      "email": "adi@gmail.com",
+      "contact": "1233448620"
     }
   ]
 }
