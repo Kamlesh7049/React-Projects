@@ -5,6 +5,8 @@ import Insert from "./pages/Insert";
 import Display from "./pages/Display";
 import Search from "./pages/Search";
 import SearchByName from "./pages/SearchByName";
+import Update from "./pages/Update";
+import EditData from "./pages/EditData";
 
 const App = () => {
   return (
@@ -18,6 +20,10 @@ const App = () => {
             <Route path="display" element={<Display />} />
             <Route path="search" element={<Search />} />
             <Route path="searchbyname" element={<SearchByName />} />
+            <Route path="update" element={<Update/>}/>
+            {/* <Route path="editrec/:myid" element={<EditData/>}/> */}
+            <Route path="editrec/:myid" element={<EditData />} />
+
           </Route>
         </Routes>
       </BrowserRouter>

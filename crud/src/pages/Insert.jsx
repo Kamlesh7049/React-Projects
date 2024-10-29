@@ -17,7 +17,7 @@ const Insert=()=>{
         let api="http://localhost:3000/employees";
         axios.post(api,input).then((res)=>{
             console.log(res);
-            // message.success ("Data Successfully save!!!");//method 1
+            // message.success ("Data Successfully save!!!");//method 1    warning ,error
             toast.success ("Data Successfully save!!!");
         })
 

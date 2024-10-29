@@ -4,19 +4,20 @@ import axios from "axios";
 const SearchByName = () => {
   const [ename, setEname] = useState("");
   const [mydata, setMydata] = useState([]);
-  const [noRecordsFound, setNoRecordsFound] = useState(false);  
+  const [noRecordsFound, setNoRecordsFound] = useState(false); // New flag for showing "No records found"
 
   const handleChange = (e) => {
     const empname = e.target.value;
     setEname(empname);
 
     if (empname.trim() === "") {
+      // If input is empty, reset the data and noRecordsFound flag
       setMydata([]);
       setNoRecordsFound(false);
       return;
     }
 
-    const api = "http://localhost:3000/employees"; 
+    const api = "http://localhost:3000/employees"; // Corrected API assignment
     axios
       .get(api)
       .then((res) => {
@@ -26,7 +27,7 @@ const SearchByName = () => {
         const matches = res.data.filter((key) =>
           key.name.toLowerCase().includes(empname.toLowerCase())
         );
-        setNoRecordsFound(matches.length === 0); 
+        setNoRecordsFound(matches.length === 0); // Set flag to true if no matches are found
       })
       .catch((err) => {
         console.error("Error fetching data", err);
@@ -64,13 +65,13 @@ const SearchByName = () => {
           width: "300px",
           fontSize: "16px",
           border: "1px solid #ccc",
-          borderRadius: "5px",
+          borderRadius: "5px", 
           marginBottom: "20px",
         }}
       />
       <hr size="5" color="green" style={{ margin: "20px 0" }} />
 
-    
+      {/* Only show table when data is found */}
       {ans.length > 0 ? (
         <table
           style={{
@@ -124,7 +125,7 @@ const SearchByName = () => {
         </table>
       ) : null}
 
-      
+      {/* Show "No records found" if no matching records are found and input is not empty */}
       {noRecordsFound && ename.trim() !== "" && (
         <p style={{ color: "red", fontSize: "18px", fontWeight: "bold" }}>
           No records found

@@ -3,11 +3,18 @@ import axios from "axios";
 const Search=()=>{
    const [eno,setEno]=useState("");
    const [mydata,setMydat]=useState([]);
+   const [edata,setEdata]=useState("")
    const handleSubmit=()=>{
     let api=`http://localhost:3000/employees/?empno=${eno}`
+    setEdata("")
     axios.get(api).then((res)=>{
         setMydat(res.data);
-        console.log(res.data);
+        // console.log(res.data);
+        if(res.data.length==0)
+        {
+            setEdata("Data Not Found !!!")
+        }
+
     })
 
 }
@@ -30,6 +37,7 @@ const ans=mydata.map((key)=>{
         <button onClick={handleSubmit}>Search!!</button>
         <hr  size="4" color="green"/>
         {ans}
+        {edata}
 
         </>
     )

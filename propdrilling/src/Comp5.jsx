@@ -1,8 +1,8 @@
     const Comp5=({user})=>{
         return (
             <>
-            <h1>Component-5:Welcom: {user}</h1>
+            <h1>Component-5: bye:{user}</h1>
             </>
         )
     }
-    export default Comp5;5
+    export default Comp5;

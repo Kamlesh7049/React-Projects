@@ -1,60 +1,18 @@
 {
   "employees": [
     {
-      "id": "57e8",
-      "empno": "1",
-      "name": "Dharm",
-      "email": "dharm@gmail.com",
-      "contact": "1234567890"
-    },
-    {
-      "id": "2c55",
-      "empno": "2",
-      "name": "Dharm",
-      "email": "dharm@gmail.com",
-      "contact": "1234567890"
-    },
-    {
       "id": "c8aa",
       "empno": "3",
       "name": "Kamlesh Shah",
       "email": "admin@gmail.com",
-      "contact": "1234566789"
+      "contact": "12345667890"
     },
     {
-      "id": "75b7",
-      "empno": "4",
-      "name": "Sani",
-      "email": "sani@gmail.com",
-      "contact": "789456"
-    },
-    {
-      "id": "cbfa",
-      "empno": "5",
-      "name": "Nitin",
-      "email": "nitin@gmail.com",
-      "contact": "1234567890"
-    },
-    {
-      "id": "5762",
-      "empno": "5",
-      "name": "Nitin",
-      "email": "nitin@gmail.com",
-      "contact": "1234567890"
-    },
-    {
-      "id": "2ac7",
-      "empno": "5",
-      "name": "Nitin",
-      "email": "nitin@gmail.com",
-      "contact": "1234567890"
-    },
-    {
-      "id": "3c60",
-      "empno": "001",
-      "name": "Aditya",
-      "email": "adi@gmail.com",
-      "contact": "1233448620"
+      "id": "d281",
+      "empno": "2",
+      "name": "Ankita",
+      "email": "ankita@gmail.com",
+      "contact": "7894561230"
     }
   ]
 }
